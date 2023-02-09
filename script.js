@@ -35,7 +35,7 @@ function init(){
     let html = "";
     let value = category1[i].innerText;
     category1[i].addEventListener("click" , async () =>{
-      const api = await fetch(`https://newsapi.org/v2/everything?q=${value}&apiKey=9731122a909141618fc2fb9b5ea9ee61`);
+      const api = await fetch(`https://newsapi.org/v2/everything?q=${value}&apiKey=2f09a9c1efa848d6ae5927678b6a6b60`);
       const data = await api.json();
       console.log(data.articles.length);
       for(let i = 0; i<data.articles.length; i++){
